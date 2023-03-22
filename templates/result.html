@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My Result</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    p {
+      font-size: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  {% if prediction %}
+  <img src="{{ image_path }}" alt="img">
+  <p>The prediction is: {{ prediction }}</p>
+  {% endif %}
+
+  <form action="/" method="get" enctype="multipart/form-data">
+    <button onclick="back()">BACK</button>
+  </form>
+
+
+
+
+
+
+</body>
+
+</html>
